@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.1.0'
+gem 'wicked'
 
 gem 'jquery-rails'
 gem 'turbolinks'
