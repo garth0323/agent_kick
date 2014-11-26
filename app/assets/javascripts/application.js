@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require magnific-popup
+//= require colorbox-rails
 //= require bootstrap-sprockets
 //= require_tree .
 
@@ -35,33 +35,22 @@ $(function () {
 
         $bgobj.css({ backgroundPosition: coords });
 
-    });
+      });
         $('div.product-chooser').not('.disabled').find('div.product-chooser-item').on('click', function(){
     $(this).parent().parent().find('div.product-chooser-item').removeClass('selected');
     $(this).addClass('selected');
     $(this).find('input[type="radio"]').prop("checked", true);
     
   });
+    
+  
 
 });
 
-$('.video').magnificPopup({
-  items: {
-         src: 'http://www.youtube.com/watch?v=7eo8XpT4CmM'
-     },
-  type: 'iframe',
-  iframe: {
-            markup: '<div class="mfp-iframe-scaler">'+
-                    '<div class="mfp-close"></div>'+
-                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                    '</div>', 
-        patterns: {
-            youtube: {
-                  index: 'youtube.com/', 
-                  id: 'v=', 
-                  src: '//www.youtube.com/embed/%id%?autoplay=1' 
-                }
-             },
-             srcAction: 'iframe_src', 
-     }
+$(document).ready(function(){
+  $(".example6").colorbox({iframe:true, innerWidth:560, innerHeight:315});
 });
+
+
+
+

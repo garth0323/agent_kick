@@ -12,7 +12,7 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'wicked'
 gem 'contact_us', '~> 0.5.1'
 gem 'simple_form'
-gem 'magnific-popup-rails'
+gem 'colorbox-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'
